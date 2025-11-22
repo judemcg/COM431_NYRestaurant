@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NY Restaurant - Reservation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="booking">
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Restaurant Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="booking.html">Reservations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Page Title and Booking Options Container -->
+    <h1>Select Your Booking</h1>
+    <div class="cards">
+
+      <!-- Table Booking Card -->
+      <div class="card">
+        <img src="images/table.jpg" alt="Book Table">
+        <h2>Table</h2>
+        <ul class="booking-details">
+          <li>Reserve a Table for a Meal</li>
+          <li>Lunch: 11:00-15:30</li>
+          <li>Dinner: 14:00-20:00</li>
+          <li>Offering up to 3 Courses!</li>
+        </ul>
+        <button onclick="selectType('Table')">Book Table</button>
+      </div>
+
+      <!-- Party Booking Card -->
+      <div class="card">
+        <img src="images/party.jpg" alt="Book Party">
+        <h2>Party</h2>
+        <ul class="booking-details">
+          <li>Reserve a Private Room</li>
+          <li>Bar, Catering and Entertainment</li>
+          <li>A Range of Themes</li>
+          <li>Up to 100 Guests</li>
+        </ul>
+        <button onclick="selectType('Party')">Book Party</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NY Restaurant. All rights reserved.
+  </footer>
+
+  <script src="js/booking.js"></script>
+</body>
+
+</html>

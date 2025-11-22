@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NY Restaurant - Book Table</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+
+<body class="booking">
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Restaurant Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="booking.html">Reservations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Table Booking Form</h1>
+
+    <!-- Table Form Container -->
+    <div class="card-container">
+      <form method="post" class="form-card">
+
+        <!-- User Details -->
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+
+        <!-- Booking Details -->
+        <input type="number" name="guests" min="1" max="25" placeholder="Number of Guests" required> <input type="date"
+          name="date" required>
+        <input type="time" name="time" min="09:00" max="21:00" required>
+        <textarea name="requests" placeholder="Special Requests (optional)"></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 NY Restaurant. All rights reserved. </footer>
+
+  <!-- jQuery and Booking Form Script -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bookingForm.js"></script>
+</body>
+
+</html>
